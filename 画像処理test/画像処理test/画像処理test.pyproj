@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e0b2bb3d-9666-425d-8779-20a99f9ad2c4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>エッジ検出.py</StartupFile>
+    <StartupFile>カスケード.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,19 +21,34 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="mylib\mylib.py" />
+    <Compile Include="mylib\__init__.py" />
+    <Compile Include="opencv.py" />
     <Compile Include="エッジ検出.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="カスケード.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="動体検知.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="動体検知2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="動画処理.py" />
+    <Compile Include="自作画像処理.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="顔検出.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cell.jpg" />
+    <Content Include="ドラレコ2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mylib\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
