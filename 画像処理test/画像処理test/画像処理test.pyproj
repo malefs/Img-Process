@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e0b2bb3d-9666-425d-8779-20a99f9ad2c4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>make_HOG.py</StartupFile>
+    <StartupFile>VGG16.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,7 +26,13 @@
     </Compile>
     <Compile Include="mylib\mylib.py" />
     <Compile Include="mylib\__init__.py" />
+    <Compile Include="opencv 2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="opencv.py" />
+    <Compile Include="VGG16.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="エッジ検出.py">
       <SubType>Code</SubType>
     </Compile>
@@ -48,6 +54,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="20180426_161146.mp4" />
     <Content Include="ドラレコ2.jpg" />
   </ItemGroup>
   <ItemGroup>
