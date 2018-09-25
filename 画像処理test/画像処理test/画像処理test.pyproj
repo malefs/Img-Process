@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e0b2bb3d-9666-425d-8779-20a99f9ad2c4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>カスケード.py</StartupFile>
+    <StartupFile>make_HOG.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="make_HOG.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mylib\mylib.py" />
     <Compile Include="mylib\__init__.py" />
     <Compile Include="opencv.py" />

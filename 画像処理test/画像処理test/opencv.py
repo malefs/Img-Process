@@ -5,7 +5,7 @@ import os
 
 
 def main():
-
+    print("Start")
     for name in os.listdir("img\\"):
         # 入力画像の読み込み
         str="img\\"+name
@@ -18,7 +18,7 @@ def main():
         #hog = cv2.HOGDescriptor()
         hog = cv2.HOGDescriptor((48,96), (16,16), (8,8), (8,8), 9)
         #hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
-        hog.setSVMDetector(cv2.HOGDescriptor_getDaimlerPeopleDetector())
+        hog.setSVMDetector(cv2.HOGDescriptor_getDaimlerPeopleDetector())#人検出器の設定　cv2.HOGDescriptor_getDefaultPeopleDetector　を変えれば色々できるかも
         hogParams = {'hitThreshold': 1 ,'finalThreshold':2,'winStride': (8, 8), 'padding': (32, 32), 'scale': 2}
 
         # 作成した識別器で人を検出
@@ -30,6 +30,7 @@ def main():
 
         # 結果を出力
         cv2.imwrite("result\\"+name,img) 
+        print("[Log] img\""+name+"\" result is \"\\result\\\\"+name+"\"")
 
 
 if __name__ == '__main__':

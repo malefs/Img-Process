@@ -25,17 +25,21 @@ def find_rect_of_target_color(image,h_v,h_v2,s_v,s_v2,v_v,v_v2):
         approx = cv2.convexHull(contour)
         rect = cv2.boundingRect(approx)#0
         #rect = cv2.minAreaRect(approx) #1
-                                               #print(rect[2])
-                                               #box= cv2.boxPoints(rect)
-                                               #print(rect)
+        #print(rect[2])
+        #box= cv2.boxPoints(rect)
+        #print(rect)
         rects.append(np.array(rect))
         #rects.append(np.int0(box))
     return rects
 
 def hsv_show():
-    hsv_img = mylib.imread("image\hsv.png", 1)
-    cv2.imshow("hsv",hsv_img)
-    cv2.waitKey(0)
+    try:
+        hsv_img = mylib.imread("image\hsv.png", 1)
+        cv2.imshow("hsv",hsv_img)
+        cv2.waitKey(0)
+    except:
+        pass
+
 
 thread_1 = threading.Thread(target=hsv_show)
 
