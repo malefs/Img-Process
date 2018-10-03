@@ -5,6 +5,9 @@ from  time import sleep
 
 cap = cv2.VideoCapture("20180426_161146.mp4")
 
+while(input("")==False):
+    pass
+
 try:
  
     while(1):
@@ -22,7 +25,6 @@ try:
 
     cap.release()
     cv2.destroyAllWindows()
-
 
 except cv2.error:
     quit()

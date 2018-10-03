@@ -45,7 +45,7 @@ def main():
     svm.setC(2.7)
     svm.setTermCriteria((cv2.TERM_CRITERIA_COUNT, 100, 1.e-06))
     svm.train(hogs, cv2.ml.ROW_SAMPLE, labels)
-    svm.save('hog_car1.xml') # 自作識別器の出力
+    svm.save('C:\Users\tokuken01.TOKUKEN\Documents\Program\Img-Process\画像処理test\画像処理test\hog_car1.xml') # 自作識別器の出力
 
 
 if __name__ == '__main__':
